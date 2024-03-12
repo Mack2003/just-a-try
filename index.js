@@ -15,3 +15,7 @@ app.listen(process.env.CYCLIC_URL || 3000, (err) => {
     };
     console.log(`Server is running on port number ${process.env.CYCLIC_URL || 3000}`)
 });
+
+app.get('/', async(req, res) => {
+    res.header(200).json({status: true, data: "You have done it"})
+})
