@@ -8,7 +8,7 @@ require('dotenv').config();
 app.use(cors());
 app.use(express.json());
 
-app.listen(process.env.CYCLIC_URL || 3000, (err) => {
+app.listen(process.env.PORT || 3000, (err) => {
     if (err) {
         console.log("Error while starting the server : " + err);
         return;
