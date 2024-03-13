@@ -13,7 +13,7 @@ app.listen(process.env.PORT, (err) => {
         console.log("Error while starting the server : " + err);
         return;
     };
-    console.log(`Server is running on port number ${process.env.CYCLIC_URL || 3000}`)
+    console.log(`Server is running on port number ${process.env.PORT || 3000}`)
 });
 
 app.get('/', async(req, res) => {
